@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Gulf Coast Bank Mortgage Lending</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ content.meta_description }}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='styles/main.css' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(window).resize(function() {
+                if($(window).width() > 768){
+                    $('nav ul').css({'display':''});
+                }else {
+                    $('nav ul').css({'display':'none'});
+                }
+            });
+
+            $('.menu-btn').click(function(){
+                $('nav ul').toggle();
+            });
+        });
+    </script>
+
+    {{ standard_header_includes }}
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-btn">&#9776;</div>
+                <ul>
+                    <li><a href="pre-qualify.html">Prequalify</a></li>
+                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
+                    <li><a href="mortage-101.html">Mortgage 101</a></li>
+                    <li><a href="loan-programs.html">Loan Programs</a></li>
+                </ul>
+            </nav>
+            
+            <div class="logo"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <h1>Mortgage 101: Prequalification</h1>
+                
+                <img src="images/mortgage-prequalification.png" alt="Mortgage 101 Prequalification" class="img-responsive" />
+                
+                <p>Buying a new home can be an intimidating process with many moving parts. How many bedrooms do you need? What areas are going to have good school districts? It's often difficult to get a grasp on exactly what issues need to be addressed first. However, if you're planning on applying for a mortgage, one of the wisest first steps will be prequalification with your lender.</p>
+                <p>Prequalification is a fairly straight-forward process in which your lender will analyze your financial situation, using basic underwriting standards, to determine an estimate of how large a mortgage you can afford. Your lender will also provide you with some basic information regarding loan options that can help you decide the type of mortgage that's best for you. </p>
+                <p>When you're ready to begin, your lender will ask about your income and job history. You won't need to provide any documentation at this point; the information used for prequalification can be provided verbally. After initial review, your lender may pull your credit report to verify credit history.</p>
+                <p>The lender will then provide you with a letter indicating the loan program (USDA, FHA, Conventional, etc.), loan amount and terms for which you would qualify, subject to further verifications. This letter will help you to make certain that you are looking at properties in an appropriate price range, and can also provide some additional negotiating power when you make an offer on a home. In fact, many real estate agents may be hesitant to show you properties until you have been prequalified.</p>
+                <p>It should be noted, however, that a prequalification is neither a pre-approval nor a commitment to lend. Once you've found your new home and made an application for a mortgage, additional verifications and documentation will be required by the underwriter.</p>
+                <p>Prequalification is a simple process that can provide you with many benefits when looking for a new home. Gulf Coast Bank Mortgage Lending can begin your prequalification online by clicking <a href="https://secure.web-loans.com/security-logon.aspx?timeout=1">here</a>. Or contact any of our local <a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/">mortgage lenders</a> directly to get started today!</p>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
+                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
+            </div>
+        </footer>
+    </main>
+    
+    {{ standard_footer_includes }}
+</body>
+</html>

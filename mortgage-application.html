@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Gulf Coast Bank Mortgage Lending</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ content.meta_description }}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='styles/main.css' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(window).resize(function() {
+                if($(window).width() > 768){
+                    $('nav ul').css({'display':''});
+                }else {
+                    $('nav ul').css({'display':'none'});
+                }
+            });
+
+            $('.menu-btn').click(function(){
+                $('nav ul').toggle();
+            });
+        });
+    </script>
+
+    {{ standard_header_includes }}
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-btn">&#9776;</div>
+                <ul>
+                    <li><a href="pre-qualify.html">Prequalify</a></li>
+                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
+                    <li><a href="mortage-101.html">Mortgage 101</a></li>
+                    <li><a href="loan-programs.html">Loan Programs</a></li>
+                </ul>
+            </nav>
+            
+            <div class="logo"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <h1>Mortgage 101: Application</h1>
+                
+                <img src="images/mortgage-application.png" alt="Mortgage 101 Application" class="img-responsive" />
+                
+                <p>You've been working with your realtor, and you've finally found the house you want to make your home. Or perhaps you finally decided to refinance and take out some equity to start that fantastic renovation you've been planning. It's now time to officially start the mortgage application process. Applying for a mortgage can be tedious. But with a little planning and organization, you can make the process much smoother and efficient. This is a list of documents and information that you should have ready to provide to your lender, after you have provided your notice of intent to proceed. If you're refinancing your home, you may only need a few of these documents.</p>
+                
+                <h4>Sales Contract</h4>
+                <p>If you're purchasing a new home, your lender will need to have a copy of the sales contract, along with all addendums. Your realtor can confirm that you have all these documents in your possession.</p>
+                
+                <h4>Identification and Address History</h4>
+                <p>As part of processing your loan application, your lender will need to verify your identity. Bring your unexpired driver's license, identification, or passport.</p>
+                <p>You'll also need to provide details of where you've lived for the past two years. In most cases, this will only need to be a simple list of addresses that you've maintained. If you're a first-time homebuyer who has been renting, make sure that you can provide contact information (phone number or email address) for your previous landlords. Your lender may need to contact them to verify that you've been responsible with rent payments.</p>
+                
+                <h4>Income and Job History</h4>
+                <p>This is a biggie... You'll need to be able to prove your income and job history. The simplest way to do this will be by providing copies of all W2s and tax returns (with all addendums and attachments) for the last two years. If you're self-employed or paid on a commission basis, you'll also need to provide copies of your pay schedules; these pages will give the underwriter a more complete understanding of your pay structure.
+                That part was history; as for the here and now, you'll need documentation showing your present employment and income. Bring copies of your paycheck stubs from the last 30 days; make sure they show your year-to-date earnings.</p>
+                
+                <h4>Asset Documentation</h4>
+                <p>Bring copies of your last two bank statements for each account you maintain. Obviously, you'll want to include your checking and savings accounts. But also be prepared to provide statements from any money market accounts, IRAs, and brokerage accounts you may have. Some of these may be unnecessary; if you aren't using funds from an account at your loan's closing, there's a good chance your underwriter won't need to see them. But nonetheless, have them ready to go if needed.</p>
+                
+                <h4>Debts</h4>
+                <p>Your lender will need to know what financial obligations you have. But this one should be fairly simple. Most of the information the underwriter will need will be provided by your credit report. Credit card debt, installment loans and any mortgage you may already have will be listed on your credit report.  If you're refinancing, bring a copy of your most recent mortgage statement.</p>
+                <p>Any other obligations you have (child support, alimony) will also need to be verified. Speak with your lender about what documentation will be needed to demonstrate these obligations.</p>
+                 
+                <p>Applying for a mortgage can be a document-heavy process. And every application is different, so do not be surprised if your lender requests other items that haven't been listed here. But don't feel overwhelmed; your lender will be able to help with any questions or problems that may arise. Contact any of our Gulf Coast Bank &amp; Trust Home Loan Lenders to get the process started. Your new home is waiting!</p>
+                 
+                <p>This is the second entry of our Mortgage 101 series; <a href="http://gulfbank.com/about-us/recent-news/mortgage-101-prequalification">click here</a> to see previous entries.</p>
+
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
+                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
+            </div>
+        </footer>
+    </main>
+    
+    {{ standard_footer_includes }}
+</body>
+</html>

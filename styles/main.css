@@ -1,0 +1,321 @@
+/* Reset Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Main Styles */
+body {
+    font-family: 'Lato', serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #008C96;
+    height: 71px;
+}
+
+header .container {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    background: url('http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/logo.png') top left no-repeat;
+    width: 240px;
+    height: 41px;
+    position: relative;
+    top: 15px;
+}
+
+h1, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 30px;
+    color: #ff662b;
+    margin-bottom: 30px;
+}
+
+h4 {
+   font-size: 16px; 
+   color: black;
+   margin-bottom: 11px;
+}
+
+ol, ul, p, section img {
+    margin-bottom: 22px;
+}
+
+p, ul, ol {
+    line-height: 24px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+ol {
+    padding-left: 30px;
+    list-style-type: decimal;
+}
+    ol li {
+        padding-left: 10px;
+    }
+
+ol li ol {
+    margin-bottom: 0;
+    list-style-type: lower-alpha;
+}
+    
+a {
+    color: #ff662b;
+    font-weight: 700;
+}
+    a:hover {
+        color: #FF8045;
+    }
+
+nav {
+    color: white;
+    float: right;
+    font-size: 18px;
+    font-family: 'Vollkorn', serif;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+}
+
+nav ul li:first-child {
+    background-color: #ff662b;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 11px 15px;
+    font-weight: normal;
+}
+    nav ul li a:hover {
+        color: white;
+    }
+
+nav ul li:last-child a {
+    padding: 11px 0 11px 15px;
+}
+
+nav .menu-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    position: relative;
+    top: 19px;
+}
+
+section {
+    padding: 65px 20px;
+}
+
+.cta {
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    color: white;
+    background-color: #008C96;
+    padding: 20px;
+    max-width: 366px;
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.cta h3 {
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    border: 0;
+}
+
+form input[type="text"] {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    font-size: 34px;
+    color: white;
+    background: url('http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/form-submit.png') top center no-repeat;
+    height: 67px;
+    margin-top: 3px;
+    display: block;
+    cursor: pointer;
+}
+
+section.lenders-bg {
+    padding: 0;
+}
+
+.lenders-bg img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #008C96;
+    min-height: 100px;
+    color: white;
+}
+
+footer .container {
+    height: 100px;
+    position: relative;
+}
+
+footer .container img {
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+}
+
+footer .container span {
+    bottom: 10px;
+    right: 0;
+    position: absolute;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 991px) {
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 71px;
+        left: 0;
+        margin: 0;
+        padding: 20px;
+        background-color: #1AA6B0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        float: none;
+    }
+
+    nav ul li:first-child {
+        background-color: #FF8045;
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    aside.cta {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        min-height: 0;
+    }
+
+    footer .container {
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    footer .container img, footer .container span {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer .container img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+
+    .logo {
+        background-size: 90% auto;
+        height: 36px;
+        top: 17px;
+    }
+
+    form input[type="submit"] {
+        background-size: 100% auto;
+    }
+}

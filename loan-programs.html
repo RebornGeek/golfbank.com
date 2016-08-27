@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Gulf Coast Bank Mortgage Lending</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ content.meta_description }}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='styles/main.css' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(window).resize(function() {
+                if($(window).width() > 768){
+                    $('nav ul').css({'display':''});
+                }else {
+                    $('nav ul').css({'display':'none'});
+                }
+            });
+
+            $('.menu-btn').click(function(){
+                $('nav ul').toggle();
+            });
+        });
+    </script>
+
+    {{ standard_header_includes }}
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-btn">&#9776;</div>
+                <ul>
+                    <li><a href="pre-qualify.html">Prequalify</a></li>
+                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
+                    <li><a href="mortage-101.html">Mortgage 101</a></li>
+                    <li><a href="loan-programs.html">Loan Programs</a></li>
+                </ul>
+            </nav>
+            
+            <div class="logo"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <h1>Loan Programs</h1>
+            
+                <p>Explore the loan programs below to see which one fits your needs.</p>
+                
+                <p>Gulf Coast Bank's Mortgage Lending offers two types of mortgages, fixed rate mortgages or adjustable rate mortgages. A fixed rate mortgage loan is a loan in which the interest rate and payments remain the same for the life of the loan. An adjustable rate mortgage is a mortgage loan which allows the lender to adjust the interest rate in accordance with a specified index periodically and as agreed to at the inception of the loan. Contact one of our local mortgage lenders today to get started!</p>
+
+                <h4>Conventional</h4>
+                <p>Conventional mortgage loans are also known as a Fannie Mae or Freddie Mac loans. The guidelines and credit requirements are established by either Fannie Mae or Freddie Mac. Generally, the credit requirements for this program type are a bit more stringent than a government loan.</p>
+                
+                <h4>FHA</h4>
+                <p>FHA, or Federal Housing Administration, is a mortgage loan that is insured by FHA. FHA and/or HUD (Department of Housing and Urban Development) set the regulations and requirements to qualify for this type of loan. Some benefits of FHA Mortgage Loans are:</p>
+                <ul>
+                    <li>Lower down payment</li>
+                    <li>Less stringent credit rating</li>
+                </ul>
+                
+                <h4>VA</h4>
+                <p>VA, or Veterans Administration, is a mortgage loan that is insured by the Veterans Administration. This program is only available to Veterans or the eligible dependents of Veterans. VA sets the service requirements to qualify for a VA backed mortgage loan. A certificate issued by the VA will document your eligibility for a VA insured loan. Some benefits of a VA Mortgage Loans are:</p>
+                <ul>
+                    <li>No down payment required</li>
+                    <li>No monthly Mortgage Insurance</li>
+                </ul>
+                
+                <h4>USDA/RD</h4>
+                <p>USDA/RD, or United States Department of Agriculture/Rural Development, is a mortgage loan that is insured by the USDA. The mortgage program has less stringent credit requirements then a conventional loan and can only be used on homes in qualified areas set by the USDA Rural Development. Some benefits of a USDA/RD Mortgage Loans are:</p>
+                <ul>
+                    <li>No down payment</li>
+                    <li>Low monthly Mortgage Insurance</li>
+                </ul>
+
+                <h4>Bond Programs</h4>
+                <p>Bond Programs are community based mortgage loan programs that Gulf Coast Bank & Trust Co. participates in. Typically the Bond programs are designed to help meet the housing needs of low-to- moderate income applicants. The programs are typically designed for first time homebuyers with rates that are usually below the current market. Some benefits of a Bond Programs are:</p>
+                <ul>
+                    <li>Down payment assistance is often available to qualified applicants</li>
+                    <li>Lower interest rate</li>
+                    <li>Generally less stringent credit requirements</li>
+                    <li>Closing costs assistance may be available</li>
+                </ul>
+
+                <h4>FHA 203k</h4>
+                <p>FHA 203k mortgages loans are also known as FHA Renovation Loans. These loans are for homes needing repairs or renovations. Normal FHA credit qualifications will still have to be met.</p>
+                
+                <h4>Construction</h4>
+                <p>Construction Loans are loans which offer the ability to either construct a residence from the ground up or renovate an existing property. Gulf Coast Bank and Trust Company offers both a single close construction loan, as well as a two time construction loan. Differences in the two programs can be discussed with your mortgage loan originator.</p>
+                
+                <h4>Reverse</h4>
+                <p>Reverse Mortgage program or The Home Equity Conversion Mortgage (HECM) is a mortgage loan that enables borrowers to borrow against the equity in their home. These loans are designed for senior homeowners who are of the age of 62 or older. This is an FHA loan.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
+                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
+            </div>
+        </footer>
+    </main>
+    
+    {{ standard_footer_includes }}
+</body>
+</html>
