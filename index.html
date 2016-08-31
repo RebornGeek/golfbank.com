@@ -12,16 +12,26 @@
     <script>
         $(document).ready(function(){
 
+            var $navMainEl = $('nav ul');
+            var $navMainLiEl = $('nav ul li');
+            var $navDropdownEl = $('nav ul li ul');
+        
+            //Responsive menu
             $(window).resize(function() {
                 if($(window).width() > 768){
-                    $('nav ul').css({'display':''});
+                    $navMainEl.css({'display':''});
                 }else {
-                    $('nav ul').css({'display':'none'});
+                    $navMainEl.css({'display':'none'});
                 }
             });
 
             $('.menu-btn').click(function(){
-                $('nav ul').toggle();
+                $navMainEl.toggle();
+            });
+            
+            //Dropdown navigation
+            $navMainLiEl.hover(function(){
+                $(this).find('ul').toggle();
             });
         });
     </script>
@@ -35,9 +45,25 @@
             <nav>
                 <div class="menu-btn">&#9776;</div>
                 <ul>
-                    <li><a href="pre-qualify.html">Prequalify</a></li>
-                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
-                    <li><a href="mortage-101.html">Mortgage 101</a></li>
+                    <li class="prequalify"><a href="pre-qualify.html">Prequalify</a></li>
+                    <li><a href="find-a-lender.html">Find A Lender Near You</a>
+                        <ul>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/new-orleans-metro">New Orleans Metro</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/baton-rouge">Baton Rouge</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/mortgage-loans/lenders/northshore-area">Northshore Area</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/houma-thibodaux">Houma-Thibodaux</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/destin">Destin, Florida</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/sarasota">Sarasota, Florida</a></li>
+                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/orlando">Orlando, Florida</a></li>
+                        </ul>
+                    </li>
+                    <li><a name="mortgage">Mortgage 101</a>
+                        <ul>
+                            <li><a href="mortgage-prequalification.html">Prequalification</a></li>
+                            <li><a href="mortgage-application.html">Application</a></li>
+                            <li><a href="mortgage-loan-estimate.html">Loan Estimate</a></li>
+                        </ul>
+                    </li>
                     <li><a href="loan-programs.html">Loan Programs</a></li>
                 </ul>
             </nav>
@@ -62,7 +88,7 @@
                     </form>
                 </aside>
             
-                <h1>Get Prequalified For Your Mortgage Loan</h1>
+                <h1 class="orange">Get Prequalified For Your Mortgage Loan</h1>
             
                 <p>Are you ready to get prequalified for a mortgage loan? Gulf Coast Bank
                 and Trust has lenders across the Gulf Coast who are ready to help you 

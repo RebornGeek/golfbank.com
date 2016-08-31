@@ -72,16 +72,28 @@ header .container {
     top: 15px;
 }
 
-h1, h4 {
+h1, h2, h4 {
     font-weight: 700;
 }
 
 h1 {
     font-size: 30px;
-    color: #ff662b;
     margin-bottom: 30px;
+    color: #008C96;
 }
+    h1.orange, ul.orange li a, h1.orange {
+        color: #ff662b;
+    }
+    ul.orange li a:hover {
+        color: #FF8045;
+    }
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #008C96;
+}
+    
 h4 {
    font-size: 16px; 
    color: black;
@@ -115,52 +127,12 @@ ol li ol {
 }
     
 a {
-    color: #ff662b;
+    color: #008995;
     font-weight: 700;
 }
     a:hover {
-        color: #FF8045;
+        color: #1AA3AF;
     }
-
-nav {
-    color: white;
-    float: right;
-    font-size: 18px;
-    font-family: 'Vollkorn', serif;
-}
-
-nav ul li {
-    float: left;
-    display: inline-block;
-}
-
-nav ul li:first-child {
-    background-color: #ff662b;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 11px 15px;
-    font-weight: normal;
-}
-    nav ul li a:hover {
-        color: white;
-    }
-
-nav ul li:last-child a {
-    padding: 11px 0 11px 15px;
-}
-
-nav .menu-btn {
-    display: none;
-    color: white;
-    cursor: pointer;
-    font-size: 40px;
-    position: relative;
-    top: 19px;
-}
 
 section {
     padding: 65px 20px;
@@ -245,6 +217,67 @@ footer .container span {
     height: auto;
 }
 
+/* Dropdown Nav Menu */
+nav {
+    color: white;
+    float: right;
+    font-size: 18px;
+    font-family: 'Vollkorn', serif;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li.prequalify {
+    background-color: #ff662b;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 11px 15px;
+    font-weight: normal;
+}
+    nav ul li a:hover {
+        color: white;
+    }
+
+nav ul li:last-child a {
+    padding: 11px 0 11px 15px;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 46px;
+    background-color: #1AA6B0;
+    padding-left: 0;
+    min-width: inherit;
+    display: none;
+}
+
+nav ul li ul li {
+    display: block;
+    float: none;
+}
+
+nav ul li ul li:hover {
+    background-color: #00737D;
+}
+
+nav .menu-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    position: relative;
+    top: 19px;
+}
+
 @media screen and (max-width: 991px) {
 
     nav ul {
@@ -264,8 +297,16 @@ footer .container span {
         display: block;
         float: none;
     }
+    
+    nav ul li ul {
+        display: block !important;
+        position: relative;
+        background-color: #00737D;
+        padding: 0 20px;
+        top: 0;
+    }
 
-    nav ul li:first-child {
+    nav ul li.prequalify {
         background-color: #FF8045;
     }
 
