@@ -1,82 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset=utf-8 />
-    <title>Gulf Coast Bank Mortgage Lending</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ content.meta_description }}">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='styles/main.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $(window).resize(function() {
-                if($(window).width() > 768){
-                    $('nav ul').css({'display':''});
-                }else {
-                    $('nav ul').css({'display':'none'});
-                }
-            });
-
-            $('.menu-btn').click(function(){
-                $('nav ul').toggle();
-            });
-        });
-    </script>
-
-    {{ standard_header_includes }}
-</head>
-<body>
+{% custom_widget "GCBT_LP_Header" widget_name='GCBT_LP_Header', label='Header for the GCBT_LP template' %} 
     
-    <header>
+    <section>
         <div class="container">
-            <nav>
-                <div class="menu-btn">&#9776;</div>
-                <ul>
-                    <li><a href="pre-qualify.html">Prequalify</a></li>
-                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
-                    <li><a href="mortage-101.html">Mortgage 101</a></li>
-                    <li><a href="loan-programs.html">Loan Programs</a></li>
-                </ul>
-            </nav>
+            <h1>Pre-qualify</h1>
             
-            <div class="logo"></div>
+            <h4>Let's Take the Next Step, Get Prequalified!</h4>
+            <p>Since many different factors determine which mortgage program is best for you, it is best to consult with a mortgage lender. A mortgage lender will help guide you through the process by asking some of the following:</p>
+            <ul>
+                <li>What are your current finances?</li>
+                <li>How long do you plan on living in your new home?</li>
+                <li>What are your future goals?</li>
+            </ul>
+            <p>Once you've discussed your needs with one of our experienced mortgage lenders, they will be able to discuss financing options with you and work with you to get you pre-qualified.</p>
+            <p>A Mortgage Lender will ask you about your income, available funds for a down payment if needed and more.</p>
+            <p>Contact one of our local Mortgage Lenders to get started today!</p>
+    
+            <h4>Let us find the right home loan to fit your needs.</h4>
+            <p>Lending today is more complicated, but that doesn't mean it has to be an ordeal. We work with our customers individually to match our services to their needs. We make lending easy for our customers by providing straight talk instead of the old run-around. This is the secret of our continued success.</p>  
+            <p>Our mission is to strengthen our relationship with our customers by combining the values of old fashioned community lending that focus on individualized customer service with innovative, competitive products and services.</p> 
+            <p>The result is a true community bank, able to provide individuals and businesses with the strength and resources they need to succeed - and ability to recognize each of them individually when they walk through the front door of their local Gulf Coast Bank Mortgage Lending office.</p>
         </div>
-    </header>
+    </section>
     
-    <main>
-        <section>
-            <div class="container">
-                <h1>Pre-qualify</h1>
-                
-                <h4>Let's Take the Next Step, Get Prequalified!</h4>
-                <p>Since many different factors determine which mortgage program is best for you, it is best to consult with a mortgage lender. A mortgage lender will help guide you through the process by asking some of the following:</p>
-                <ul>
-                    <li>What are your current finances?</li>
-                    <li>How long do you plan on living in your new home?</li>
-                    <li>What are your future goals?</li>
-                </ul>
-                <p>Once you've discussed your needs with one of our experienced mortgage lenders, they will be able to discuss financing options with you and work with you to get you pre-qualified.</p>
-                <p>A Mortgage Lender will ask you about your income, available funds for a down payment if needed and more.</p>
-                <p>Contact one of our local Mortgage Lenders to get started today!</p>
-
-                <h4>Let us find the right home loan to fit your needs.</h4>
-                <p>Lending today is more complicated, but that doesn't mean it has to be an ordeal. We work with our customers individually to match our services to their needs. We make lending easy for our customers by providing straight talk instead of the old run-around. This is the secret of our continued success.</p>  
-                <p>Our mission is to strengthen our relationship with our customers by combining the values of old fashioned community lending that focus on individualized customer service with innovative, competitive products and services.</p> 
-                <p>The result is a true community bank, able to provide individuals and businesses with the strength and resources they need to succeed - and ability to recognize each of them individually when they walk through the front door of their local Gulf Coast Bank Mortgage Lending office.</p>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
-                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
-            </div>
-        </footer>
-    </main>
-    
-    {{ standard_footer_includes }}
-</body>
-</html>
+{% custom_widget "GCBT_LP_Footer" widget_name='GCBT_LP_Footer', label='Footer for the GCBT_LP template' %}

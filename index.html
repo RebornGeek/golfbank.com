@@ -1,126 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset=utf-8 />
-    <title>Gulf Coast Bank Mortgage Lending</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ content.meta_description }}">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='styles/main.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            var $navMainEl = $('nav ul');
-            var $navMainLiEl = $('nav ul li');
-            var $navDropdownEl = $('nav ul li ul');
-        
-            //Responsive menu
-            $(window).resize(function() {
-                if($(window).width() > 768){
-                    $navMainEl.css({'display':''});
-                }else {
-                    $navMainEl.css({'display':'none'});
-                }
-            });
-
-            $('.menu-btn').click(function(){
-                $navMainEl.toggle();
-            });
-            
-            //Dropdown navigation
-            $navMainLiEl.hover(function(){
-                $(this).find('ul').toggle();
-            });
-        });
-    </script>
-
-    {{ standard_header_includes }}
-</head>
-<body>
+{% custom_widget "GCBT_LP_Header" widget_name='GCBT_LP_Header', label='Header for the GCBT_LP template' %}   
     
-    <header>
+    <section>
         <div class="container">
-            <nav>
-                <div class="menu-btn">&#9776;</div>
-                <ul>
-                    <li class="prequalify"><a href="pre-qualify.html">Prequalify</a></li>
-                    <li><a href="find-a-lender.html">Find A Lender Near You</a>
-                        <ul>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/new-orleans-metro">New Orleans Metro</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/baton-rouge">Baton Rouge</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/mortgage-loans/lenders/northshore-area">Northshore Area</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/houma-thibodaux">Houma-Thibodaux</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/destin">Destin, Florida</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/sarasota">Sarasota, Florida</a></li>
-                            <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/orlando">Orlando, Florida</a></li>
-                        </ul>
-                    </li>
-                    <li><a name="mortgage">Mortgage 101</a>
-                        <ul>
-                            <li><a href="mortgage-prequalification.html">Prequalification</a></li>
-                            <li><a href="mortgage-application.html">Application</a></li>
-                            <li><a href="mortgage-loan-estimate.html">Loan Estimate</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="loan-programs.html">Loan Programs</a></li>
-                </ul>
-            </nav>
-            
-            <div class="logo"></div>
+            <aside class="cta">
+                <h3>Take the Next Step!</h3>
+                
+                <form>
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="submit" value="" />
+                </form>
+            </aside>
+        
+            <h1 class="orange">Get Prequalified For Your Mortgage Loan</h1>
+        
+            <p>Are you ready to get prequalified for a mortgage loan? Gulf Coast Bank
+            and Trust has lenders across the Gulf Coast who are ready to help you 
+            find the right loan for your needs.</p>
+
+            <p>Our mortgage lenders will help guide you through the process by
+            asking some of the following:</p>
+
+            <ul>
+                <li>What are your current finances?</li>
+                <li>How long do you plan on living in your new home?</li>
+                <li>What are your future goals?</li>
+            </ul>
+                
+            <p>Once you've discussed your needs with one of our experienced
+            mortgage lenders, they will be able to discuss financing options with 
+            you and work with you to get you pre-qualified.</p>
         </div>
-    </header>
+    </section>
     
-    <main>
-        <section>
-            <div class="container">
-                <aside class="cta">
-                    <h3>Take the Next Step!</h3>
-                    
-                    <form>
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="submit" value="" />
-                    </form>
-                </aside>
-            
-                <h1 class="orange">Get Prequalified For Your Mortgage Loan</h1>
-            
-                <p>Are you ready to get prequalified for a mortgage loan? Gulf Coast Bank
-                and Trust has lenders across the Gulf Coast who are ready to help you 
-                find the right loan for your needs.</p>
-
-                <p>Our mortgage lenders will help guide you through the process by
-                asking some of the following:</p>
-
-                <ul>
-                    <li>What are your current finances?</li>
-                    <li>How long do you plan on living in your new home?</li>
-                    <li>What are your future goals?</li>
-                </ul>
-                    
-                <p>Once you've discussed your needs with one of our experienced
-                mortgage lenders, they will be able to discuss financing options with 
-                you and work with you to get you pre-qualified.</p>
-            </div>
-        </section>
+    <section class="lenders-bg">
+         <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/lenders-section-bg.png"  alt="Over 30 mortgage lenders" />
+    </section>
         
-        <section class="lenders-bg">
-             <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/lenders-section-bg.png"  alt="Over 30 mortgage lenders" />
-        </section>
-        
-        <footer>
-            <div class="container">
-                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
-                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
-            </div>
-        </footer>
-    </main>
-    
-    {{ standard_footer_includes }}
-</body>
-</html>
+{% custom_widget "GCBT_LP_Footer" widget_name='GCBT_LP_Footer', label='Footer for the GCBT_LP template' %}   

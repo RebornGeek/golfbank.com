@@ -1,79 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset=utf-8 />
-    <title>Gulf Coast Bank Mortgage Lending</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ content.meta_description }}">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='styles/main.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
+{% custom_widget "GCBT_LP_Header" widget_name='GCBT_LP_Header', label='Header for the GCBT_LP template' %} 
 
-            $(window).resize(function() {
-                if($(window).width() > 768){
-                    $('nav ul').css({'display':''});
-                }else {
-                    $('nav ul').css({'display':'none'});
-                }
-            });
-
-            $('.menu-btn').click(function(){
-                $('nav ul').toggle();
-            });
-        });
-    </script>
-
-    {{ standard_header_includes }}
-</head>
-<body>
-    
-    <header>
+    <section>
         <div class="container">
-            <nav>
-                <div class="menu-btn">&#9776;</div>
-                <ul>
-                    <li><a href="pre-qualify.html">Prequalify</a></li>
-                    <li><a href="find-a-lender.html">Find A Lender Near You</a></li>
-                    <li><a href="mortage-101.html">Mortgage 101</a></li>
-                    <li><a href="loan-programs.html">Loan Programs</a></li>
-                </ul>
-            </nav>
+            <h1>Find a Lender Near You</h1>
             
-            <div class="logo"></div>
+            <p>GCB Mortgage Lending has over 30 mortgage lenders who serve communities all across the Gulf South including Louisiana and Florida but we can lend anywhere in the U.S.</p>
+            <p class="strong">OR</p>
+            <p>Gulf Coast Bank Mortgage Lending has over 30 Mortgage Lenders located throughout East Baton Rouge, Jefferson, Livingston, Orleans, St. Bernard, St. Tammany, and Tangipahoa parishes in Louisiana as well as Okaloosa and Sarasota counties in Florida. Contact one the below lenders today to get started!</p>
+            <ul class="orange">
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/new-orleans-metro">New Orleans Metro</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/baton-rouge">Baton Rouge</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/mortgage-loans/lenders/northshore-area">Northshore Area</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/houma-thibodaux">Houma-Thibodaux</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/destin">Destin, Florida</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/sarasota">Sarasota, Florida</a></li>
+                <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/orlando">Orlando, Florida</a></li>
+            </ul>
         </div>
-    </header>
+    </section>
     
-    <main>
-        <section>
-            <div class="container">
-                <h1>Find a Lender Near You</h1>
-                
-                <p>GCB Mortgage Lending has over 30 mortgage lenders who serve communities all across the Gulf South including Louisiana and Florida but we can lend anywhere in the U.S.</p>
-                <p class="strong">OR</p>
-                <p>Gulf Coast Bank Mortgage Lending has over 30 Mortgage Lenders located throughout East Baton Rouge, Jefferson, Livingston, Orleans, St. Bernard, St. Tammany, and Tangipahoa parishes in Louisiana as well as Okaloosa and Sarasota counties in Florida. Contact one the below lenders today to get started!</p>
-                <ul class="orange">
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/new-orleans-metro">New Orleans Metro</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/baton-rouge">Baton Rouge</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/mortgage-loans/lenders/northshore-area">Northshore Area</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/houma-thibodaux">Houma-Thibodaux</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/destin">Destin, Florida</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/sarasota">Sarasota, Florida</a></li>
-                    <li><a href="http://gulfbank.com/personal/lending-solutions/home-loans/lenders/orlando">Orlando, Florida</a></li>
-                </ul>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                    <img src="http://cdn2.hubspot.net/hubfs/2250826/GCBT_LP/footer-logos.jpg" alt="FDIC" />
-                    <span>&copy; GCB&amp;T 2016 | Privacy &amp; Legal | Online Security</span>
-            </div>
-        </footer>
-    </main>
-    
-    {{ standard_footer_includes }}
-</body>
-</html>
+{% custom_widget "GCBT_LP_Footer" widget_name='GCBT_LP_Footer', label='Footer for the GCBT_LP template' %}  
