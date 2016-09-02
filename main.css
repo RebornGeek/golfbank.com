@@ -161,6 +161,7 @@ section {
 form input {
     width: 100%;
     border: 0;
+    padding-left: 10px;
 }
 
 form input[type="text"] {
